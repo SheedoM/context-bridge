@@ -1,6 +1,6 @@
 # 🌉 Context Bridge
 
-The Context Bridge skill prevents context loss when hitting AI usage limits mid-development. By typing `/checkpoint`, your local AI agent acts as an emergency brake, instantly saving a noise-free snapshot of your workspace—including active file trees, data shapes, and immediate next steps—into a structured `checkpoint.md` file. Drop this artifact into any fresh AI model to resume complex development seamlessly.
+The Context Bridge skill prevents context loss when hitting AI usage limits mid-development. By typing `/checkpoint` or '/bridge', your local AI agent acts as an emergency brake, instantly saving a noise-free snapshot of your workspace—including active file trees, data shapes, and immediate next steps—into a structured `checkpoint.md` file. Drop this artifact into any fresh AI model to resume complex development seamlessly.
 
 ## 🚀 Installation
 
