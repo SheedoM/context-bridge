@@ -11,22 +11,22 @@ Run the single terminal command for your specific AI tool. This will safely appe
 
 **For Cursor:**
 ```bash
-curl -s https://raw.githubusercontent.com/SheedoM/context-bridge/main/context-bridge.md >> .cursorrules && echo "✅ Context Bridge installed successfully in .cursorrules!"
+curl -sf https://raw.githubusercontent.com/SheedoM/context-bridge/main/context-bridge.md >> .cursorrules && echo "✅ Context Bridge installed successfully in .cursorrules!"
 ```
 
 **For Claude Code:**
 ```bash
-curl -s https://raw.githubusercontent.com/SheedoM/context-bridge/main/context-bridge.md >> CLAUDE.md && echo "✅ Context Bridge installed successfully in CLAUDE.md!"
+curl -sf https://raw.githubusercontent.com/SheedoM/context-bridge/main/context-bridge.md >> CLAUDE.md && echo "✅ Context Bridge installed successfully in CLAUDE.md!"
 ```
 
 **For Windsurf:**
 ```bash
-curl -s https://raw.githubusercontent.com/SheedoM/context-bridge/main/context-bridge.md >> .windsurfrules && echo "✅ Context Bridge installed successfully in .windsurfrules!"
+curl -sf https://raw.githubusercontent.com/SheedoM/context-bridge/main/context-bridge.md >> .windsurfrules && echo "✅ Context Bridge installed successfully in .windsurfrules!"
 ```
 
 **For Antigravity / Codex (Generic System Prompt):**
 ```bash
-curl -s https://raw.githubusercontent.com/SheedoM/context-bridge/main/context-bridge.md >> system.md && echo "✅ Context Bridge installed successfully in system.md!"
+curl -sf https://raw.githubusercontent.com/SheedoM/context-bridge/main/context-bridge.md >> system.md && echo "✅ Context Bridge installed successfully in system.md!"
 ```
 
 ### Method 2: Manual Installation
