@@ -1,6 +1,6 @@
 # 🌉 Context Bridge
 
-The Context Bridge skill prevents context loss when hitting AI usage limits mid-development. By typing `/checkpoint` or '/bridge', your local AI agent acts as an emergency brake, instantly saving a noise-free snapshot of your workspace—including active file trees, data shapes, and immediate next steps—into a structured `checkpoint.md` file. Drop this artifact into any fresh AI model to resume complex development seamlessly.
+The Context Bridge skill prevents context loss when hitting AI usage limits mid-development. By typing `/checkpoint` or `/bridge` (optionally followed by a `<name>`), your local AI agent acts as an emergency brake, instantly saving a noise-free snapshot of your workspace—including active file trees, data shapes, and immediate next steps—into a structured markdown file (`checkpoint.md` or `checkpoint-<name>.md`). Drop this artifact into any fresh AI model to resume complex development seamlessly.
 
 ## 🚀 Installation
 
@@ -38,3 +38,10 @@ If you prefer to review the code before adding it, you can install the skill man
 
 ## ⚡ Triggering the Bridge
 When you are nearing your token/usage limit, simply type `/checkpoint` in the chat. The AI will immediately generate a `checkpoint.md` file in your root directory.
+
+### 👥 Parallel Agent Workflows
+If you have multiple agents running simultaneously in the same workspace, you can assign them unique names to prevent them from overwriting each other's checkpoints:
+* Type `/checkpoint auth-service` to generate `checkpoint-auth-service.md`.
+* Type `/checkpoint UI-cleanup` to generate `checkpoint-ui-cleanup.md`.
+
+Drop the corresponding custom checkpoint file into a new agent session to continue that specific workflow thread.

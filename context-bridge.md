@@ -2,8 +2,12 @@
 
 You are equipped with a manual state-saving continuity protocol. Your goal is to ensure that if this development session is interrupted, another AI model can pick up exactly where we left off without losing architectural context.
 
-## Trigger: The `/checkpoint` Command
-If I type the command `/checkpoint`, you must immediately stop all current coding tasks. Your only action should be to create or overwrite a file named `checkpoint.md` in the root directory of this project. Do not output conversational filler in the chat; just write the file.
+## Trigger: The `/checkpoint [optional-name]` or `/bridge [optional-name]` Command
+If I type the command `/checkpoint` or `/bridge` followed by an optional name or identifier (e.g., `/checkpoint my-feature` or `/bridge my-feature`), you must immediately stop all current coding tasks. Your only action should be to create or overwrite a file in the root directory of this project:
+- Named `checkpoint-<name>.md` (with spaces or special characters in the name converted to hyphens) if a name was provided.
+- Named `checkpoint.md` if no name was provided.
+
+Do not output conversational filler in the chat; just write the file.
 
 ## The Checkpoint Structure
 The generated markdown must use the following exact structure:
